@@ -9,3 +9,9 @@ canvas {
   height: 800px;
   border: 5px solid #000;
 }
+
+.color-option {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
