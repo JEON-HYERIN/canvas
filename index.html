@@ -7,40 +7,48 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <div class="color-options">
-        <input type="color" id="color" />
-        <div class="color-option" style="background-color: #1abc9c;" data-color="#1abc9c"></div>
-        <div class="color-option" style="background-color: #3498db;" data-color="#3498db"></div>
-        <div class="color-option" style="background-color: #34495e;" data-color="#34495e"></div>
-        <div class="color-option" style="background-color: #27ae60;" data-color="#27ae60"></div>
-        <div class="color-option" style="background-color: #8e44ad;" data-color="#8e44ad"></div>
-        <div class="color-option" style="background-color: #f1c40f;" data-color="#f1c40f"></div>
-        <div class="color-option" style="background-color: #e74c3c;" data-color="#e74c3c"></div>
-        <div class="color-option" style="background-color: #95a5a6;" data-color="#95a5a6"></div>
-        <div class="color-option" style="background-color: #d35400;" data-color="#d35400"></div>
-        <div class="color-option" style="background-color: #2ecc71;" data-color="#2ecc71"></div>
-        <div class="color-option" style="background-color: #e67e22;" data-color="#e67e22"></div>
-    </div>
-    <canvas></canvas>
-    <div class="btns">
-        <input type="range" id="line-width" min="1" max="10" value="5" step="0.5" />
-        <select id="font-select">
-            <option value="">Choose a font size</option>
-            <option value="30px">30px</option>
-            <option value="40px">40px</option>
-            <option value="50px">50px</option>
-            <option value="60px">60px</option>
-        </select>
-        <button type="button" id="mode-btn">🩸 Fill</button>
-        <button type="button" id="destroy-btn">💣 destroy</button>
-        <button type="button" id="eraser-btn">❌ Erase</button>
-        <label for="file">
-            💾 Add Photo
-            <input type="file" id="file" accept="image/*" />
-        </label>
-        <input type="text" id="text" placeholder="Add text here... :)" />
-        <button id="save">👀 Save image</button>
-    </div>
+    <section class="canvas-area">
+        <h1 class="blind">My Canvas</h1>
+        <div class="color-options">
+            <input type="color" id="color" />
+            <div class="color-option" style="background-color: #1abc9c;" data-color="#1abc9c"></div>
+            <div class="color-option" style="background-color: #3498db;" data-color="#3498db"></div>
+            <div class="color-option" style="background-color: #34495e;" data-color="#34495e"></div>
+            <div class="color-option" style="background-color: #27ae60;" data-color="#27ae60"></div>
+            <div class="color-option" style="background-color: #8e44ad;" data-color="#8e44ad"></div>
+            <div class="color-option" style="background-color: #f1c40f;" data-color="#f1c40f"></div>
+            <div class="color-option" style="background-color: #e74c3c;" data-color="#e74c3c"></div>
+            <div class="color-option" style="background-color: #95a5a6;" data-color="#95a5a6"></div>
+            <div class="color-option" style="background-color: #d35400;" data-color="#d35400"></div>
+            <div class="color-option" style="background-color: #2ecc71;" data-color="#2ecc71"></div>
+            <div class="color-option" style="background-color: #e67e22;" data-color="#e67e22"></div>
+        </div>
+        <canvas></canvas>
+        <div class="btns">
+            <input type="range" id="line-width" min="1" max="10" value="5" step="0.5" />
+            <select id="font-select">
+                <option value="">Choose a font size</option>
+                <option value="20px">20px</option>
+                <option value="30px">30px</option>
+                <option value="40px">40px</option>
+                <option value="50px">50px</option>
+                <option value="60px">60px</option>
+                <option value="70px">70px</option>
+                <option value="80px">80px</option>
+                <option value="90px">90px</option>
+                <option value="100px">100px</option>
+            </select>
+            <button type="button" id="mode-btn">🩸 Fill</button>
+            <button type="button" id="destroy-btn">💣 destroy</button>
+            <button type="button" id="eraser-btn">❌ Erase</button>
+            <label for="file">
+                💾 Add Photo
+                <input type="file" id="file" accept="image/*" />
+            </label>
+            <input type="text" id="text" placeholder="Add text here... :)" />
+            <button id="save">👀 Save image</button>
+        </div>
+    </section>
     <!-- JS -->
     <script src="./js/app.js"></script>
 </body>
